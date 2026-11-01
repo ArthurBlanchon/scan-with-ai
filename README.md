@@ -8,6 +8,10 @@ sends it to a configurable AI gateway, and writes the results back into the
 mapped `FileMetadata` (JSON), `FileExtract` (raw text), and `AiText`
 (LLM-generated document text) columns.
 
+<!-- install-url:start -->
+**Install URL**, to paste into a Grist custom widget's URL field: <https://arthurblanchon.github.io/scan-with-ai/latest/>
+<!-- install-url:end -->
+
 `src/App.tsx` renders `WidgetApp` (`src/components/widget-app.tsx`) plus a
 `sonner` `Toaster`, and re-exports `GRIST_OPTIONS`/`WIDGET_METADATA` from
 `src/grist-options.ts` (which declares the required `File` (Attachments)
