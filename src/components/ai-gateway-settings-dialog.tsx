@@ -1,5 +1,5 @@
 import { CheckIcon, EyeIcon, EyeOffIcon, Trash2Icon } from "lucide-react"
-import { useCallback, useEffect, useState } from "react"
+import { useCallback, useState } from "react"
 import { toast } from "sonner"
 
 import {
@@ -79,9 +79,15 @@ export function AiGatewaySettingsDialog({
     setShowApiKey(false)
   }, [initialConfig])
 
-  useEffect(() => {
+  // Re-sync the form with the saved config whenever the dialog opens, or the
+  // saved config changes while it is open. Done while rendering (React's
+  // "adjusting state when a prop changes" pattern) rather than in an effect,
+  // so the dialog never paints a frame of the previous session's input.
+  const [syncedWith, setSyncedWith] = useState({ open, initialConfig })
+  if (syncedWith.open !== open || syncedWith.initialConfig !== initialConfig) {
+    setSyncedWith({ open, initialConfig })
     if (open) resetToSaved()
-  }, [open, resetToSaved])
+  }
 
   const buildConfigFromForm = useCallback((): ResolvedGatewayConfig => {
     const nextModelById = modelRowsToModelById(modelRows)
