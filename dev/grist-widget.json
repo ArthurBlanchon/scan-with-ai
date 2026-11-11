@@ -38,7 +38,7 @@
       "url": "https://github.com/ArthurBlanchon"
     }
   ],
-  "lastUpdatedAt": "2026-11-11T14:16:16.372Z",
+  "lastUpdatedAt": "2026-11-11T14:39:27.973Z",
   "gristWidgetSdk": {
     "schema": 1,
     "channel": "dev",
@@ -46,6 +46,7 @@
     "repository": "https://github.com/ArthurBlanchon/scan-with-ai",
     "license": "MIT",
     "sdk": "0.4.0",
-    "createGristWidget": "0.4.0"
+    "createGristWidget": "0.4.0",
+    "demo": "https://arthurblanchon.github.io/scan-with-ai/dev/demo/"
   }
 }
