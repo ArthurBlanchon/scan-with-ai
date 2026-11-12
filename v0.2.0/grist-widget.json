@@ -1,0 +1,52 @@
+{
+  "name": "Upload with AI",
+  "widgetId": "@arthurblanchon/scan-with-ai",
+  "url": "https://arthurblanchon.github.io/scan-with-ai/v0.2.0/",
+  "published": true,
+  "accessLevel": "full",
+  "columns": [
+    {
+      "name": "File",
+      "type": "Attachments",
+      "title": "File",
+      "description": "One attachment per row (required)."
+    },
+    {
+      "name": "FileMetadata",
+      "type": "Text",
+      "title": "File metadata",
+      "description": "AI metadata as JSON string (maps to file_metadata)."
+    },
+    {
+      "name": "FileExtract",
+      "type": "Text",
+      "title": "File extract",
+      "description": "Raw extracted text from the file (PDF.js / plain text), not AI."
+    },
+    {
+      "name": "AiText",
+      "type": "Text",
+      "title": "AI text",
+      "description": "LLM-generated document text (maps to ai_text)."
+    }
+  ],
+  "renderAfterReady": false,
+  "description": "Upload a file per row, extract raw text, and scan with AI into metadata and AI text columns.",
+  "authors": [
+    {
+      "name": "ArthurBlanchon",
+      "url": "https://github.com/ArthurBlanchon"
+    }
+  ],
+  "lastUpdatedAt": "2026-11-12T16:41:10.796Z",
+  "gristWidgetSdk": {
+    "schema": 1,
+    "channel": "release",
+    "version": "0.2.0",
+    "repository": "https://github.com/ArthurBlanchon/scan-with-ai",
+    "license": "MIT",
+    "sdk": "0.4.0",
+    "createGristWidget": "0.4.0",
+    "demo": "https://arthurblanchon.github.io/scan-with-ai/v0.2.0/demo/"
+  }
+}
