@@ -24,8 +24,8 @@ importers:
         specifier: ^1.1.1
         version: 1.1.1(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
       grist-widget-sdk:
-        specifier: ^0.6.2
-        version: 0.6.2(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
+        specifier: ^0.7.0
+        version: 0.7.0(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
       lucide-react:
         specifier: ^1.70.0
         version: 1.73.0(@types/react@19.3.0)(react@19.3.1)
@@ -242,6 +242,10 @@ packages:
 
   '@babel/runtime@7.29.10':
     resolution: {integrity: sha512-NpugTzbKgGrNe45Ui32cN8vCFFMxVtP/9rtfwv0nP5FRDAjvYBxJcLVpYA9mr1jxP6cnIT7x9LUzuDTbWYYNRA==}
+    engines: {node: '>=6.9.0'}
+
+  '@babel/runtime@7.29.14':
+    resolution: {integrity: sha512-Y5tqevQaUAZhhj82BpYMNC1ssvLQTVAfwKdm8iy8qwmhvC2/CpcAu8OC+QEtjM7pMk7knx83u1Qj8gzkicyelw==}
     engines: {node: '>=6.9.0'}
 
   '@babel/template@7.29.7':
@@ -2028,8 +2032,8 @@ packages:
   graceful-fs@4.2.11:
     resolution: {integrity: sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ==}
 
-  grist-widget-sdk@0.6.2:
-    resolution: {integrity: sha512-f4V3dSEuD8ZtyRdaJ4D6hQG3ZiMPmFhKxL3EpGa0PLiI9qds6sbrX8yN5mIniQkn+cl9Eet1W8X6/BP2n2zzrw==}
+  grist-widget-sdk@0.7.0:
+    resolution: {integrity: sha512-+vEqcavCuk+YOdoQDbK+KyHoTTNdfcn/KgO09BtnmLFCJtraHK+++zSfmOW5r8Dxc0gIvBn1FlPZlytYj2qFUg==}
     engines: {node: '>=18'}
     peerDependencies:
       react: '>=18'
@@ -3257,6 +3261,8 @@ snapshots:
 
   '@babel/runtime@7.29.10': {}
 
+  '@babel/runtime@7.29.14': {}
+
   '@babel/template@7.29.7':
     dependencies:
       '@babel/code-frame': 7.29.7
@@ -4426,7 +4432,7 @@ snapshots:
   '@testing-library/dom@10.4.2':
     dependencies:
       '@babel/code-frame': 7.29.7
-      '@babel/runtime': 7.29.10
+      '@babel/runtime': 7.29.14
       '@types/aria-query': 5.0.4
       aria-query: 5.3.0
       dom-accessibility-api: 0.5.16
@@ -5055,7 +5061,7 @@ snapshots:
 
   graceful-fs@4.2.11: {}
 
-  grist-widget-sdk@0.6.2(react-dom@19.3.1(react@19.3.1))(react@19.3.1):
+  grist-widget-sdk@0.7.0(react-dom@19.3.1(react@19.3.1))(react@19.3.1):
     dependencies:
       react: 19.3.1
       react-dom: 19.3.1(react@19.3.1)
